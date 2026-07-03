@@ -12,7 +12,7 @@ This project contains machine learning models and scripts for grading and classi
 
 ## 📁 Project Structure
 - `Mango_Classification.ipynb`: A Google Colab notebook for training a YOLO model using a dataset from Roboflow. It also includes evaluation and a Gradio web interface.
-- `Mango_classificate_camera.ipynb`: A local Python notebook that uses a trained YOLO model and OpenCV to track mangos via webcam and count them as they cross a specific region, logging the results to `total.csv`.
+- `realtime_camera.ipynb`: A local Python notebook that uses a trained YOLO model and OpenCV to track mangos via webcam and count them as they cross a specific region, logging the results to `total.csv`.
 - `models/`: Directory to store your trained YOLO weights (`best.pt`, `yolo11n.pt`, etc.). Note: `.pt` files are ignored by git due to their size.
 - `datasets/`: Directory for your training/testing images and labels.
 - `output/`: Directory for output logs, predictions, and `total.csv`.
@@ -31,7 +31,7 @@ This part is meant to be run locally on your computer with a connected camera.
 2. **Prepare the Model**:
    Place your trained model weights (e.g., `best.pt` or `yolo11n.pt`) inside the `models/` directory.
 3. **Run the Notebook**:
-   - Open `Mango_classificate_camera.ipynb` in Jupyter Notebook or VS Code.
+   - Open `realtime_camera.ipynb` in Jupyter Notebook or VS Code.
    - Run the cells sequentially.
    - A window will pop up showing your webcam feed. When mangos pass through the drawn region, they will be counted by their grade (A, B, C).
    - The final counts will be saved into `output/total.csv` and visualized using a bar chart at the end of the notebook.
