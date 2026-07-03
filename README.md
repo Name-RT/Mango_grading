@@ -1,5 +1,13 @@
 # Mango Grading Project
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Ultralytics YOLO](https://img.shields.io/badge/Ultralytics_YOLO-v8%2Fv11-FF8C00)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8)
+![Gradio](https://img.shields.io/badge/Gradio-Web%20UI-FF7C00)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Cloud%20GPU-F9AB00)
+
 This project contains machine learning models and scripts for grading and classifying mangos into three categories: **Grade-A, Grade-B, and Grade-C**. It features both a web interface for static image/video uploads and a real-time tracking system via webcam.
 
 ## 🛠 Tools & Technologies Used
