@@ -20,7 +20,18 @@ This project contains machine learning models and scripts for grading and classi
 
 ## 🚀 How to Use the Project
 
-### Part 1: Real-Time Mango Counting (Webcam)
+### Part 1: Training and Web Interface (Google Colab)
+This part is optimized for Google Colab to utilize free GPUs for training.
+
+1. **Open in Colab**: Upload `Mango_Classification.ipynb` to Google Colab.
+2. **Mount Google Drive**: Run the first cell to mount your Drive so you can save trained models.
+3. **Download Dataset**: Use the provided Roboflow API cell to download the `MangoGrading_Merge-6` dataset.
+4. **Train the Model**: Run the YOLO `detect train` commands. The trained weights will be saved to the `runs/` folder and can be copied to your Google Drive.
+5. **Start Gradio Web App**: 
+   - Run the Gradio cells near the bottom. 
+   - A public web link will be generated. You can click the link to open a webpage where you can upload photos or videos of mangos and see the model's grading predictions instantly.
+
+### Part 2: Real-Time Mango Counting (Webcam)
 This part is meant to be run locally on your computer with a connected camera.
 
 1. **Install Dependencies**:
@@ -36,14 +47,3 @@ This part is meant to be run locally on your computer with a connected camera.
    - A window will pop up showing your webcam feed. When mangos pass through the drawn region, they will be counted by their grade (A, B, C).
    - The final counts will be saved into `output/total.csv` and visualized using a bar chart at the end of the notebook.
    - Press `q` to stop the webcam feed.
-
-### Part 2: Training and Web Interface (Google Colab)
-This part is optimized for Google Colab to utilize free GPUs for training.
-
-1. **Open in Colab**: Upload `Mango_Classification.ipynb` to Google Colab.
-2. **Mount Google Drive**: Run the first cell to mount your Drive so you can save trained models.
-3. **Download Dataset**: Use the provided Roboflow API cell to download the `MangoGrading_Merge-6` dataset.
-4. **Train the Model**: Run the YOLO `detect train` commands. The trained weights will be saved to the `runs/` folder and can be copied to your Google Drive.
-5. **Start Gradio Web App**: 
-   - Run the Gradio cells near the bottom. 
-   - A public web link will be generated. You can click the link to open a webpage where you can upload photos or videos of mangos and see the model's grading predictions instantly.
