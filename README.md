@@ -35,9 +35,9 @@ This part is optimized for Google Colab to utilize free GPUs for training.
 This part is meant to be run locally on your computer with a connected camera.
 
 1. **Install Dependencies**:
-   Open your terminal and install the required Python libraries:
+   Open your terminal and install the required Python libraries using the `requirements.txt` file:
    ```bash
-   pip install ultralytics opencv-python numpy pandas matplotlib
+   pip install -r requirements.txt
    ```
 2. **Prepare the Model**:
    Place your trained model weights (e.g., `best.pt` or `yolo11n.pt`) inside the `models/` directory.
