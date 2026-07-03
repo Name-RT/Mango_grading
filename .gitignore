@@ -1,0 +1,22 @@
+# Models
+*.pt
+*.pth
+*.weights
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Datasets
+datasets/
+!datasets/.gitkeep
+
+# Output logs
+runs/
+!runs/.gitkeep
+output/
+!output/.gitkeep
+total.csv
