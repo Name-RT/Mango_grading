@@ -10,6 +10,9 @@
 
 This project contains machine learning models and scripts for grading and classifying mangos into three categories: **Grade-A, Grade-B, and Grade-C**. It features both a web interface for static image/video uploads and a real-time tracking system via webcam.
 
+## 📸 Output Sample
+![Model Output Sample](output_sample.png)
+
 ## 🛠 Tools & Technologies Used
 - **[Ultralytics YOLO (v8/v11)](https://github.com/ultralytics/ultralytics)**: For training the object detection model and real-time tracking.
 - **[OpenCV](https://opencv.org/)**: For webcam video stream capture and image processing.
